@@ -9,7 +9,7 @@ import UIKit
 
 class ExploreImagViewIntrinsicSizeViewController: UIViewController {
     let imageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "dummy"))
+        let imageView = UIImageView(image: UIImage(named: "dummy100"))
 
         return imageView
     }()

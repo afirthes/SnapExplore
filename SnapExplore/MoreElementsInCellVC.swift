@@ -1,5 +1,5 @@
 //
-//  ImageInTableViewVC.swift
+//  MoreElementsInCellVC.swift
 //  SnapExplore
 //
 //  Created by Afir Thes on 08.02.2023.
@@ -7,13 +7,22 @@
 
 import UIKit
 
-class ImateTableViewCell: UITableViewCell {
+class MoreElementsCell: UITableViewCell {
     static var reuseId = "cell"
 
     let contentImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "dummy100")!)
         imageView.contentMode = .scaleAspectFit
         return imageView
+    }()
+
+    let imageNameLabel: UILabel = {
+        let lable = UILabel()
+
+        lable.text = "Это замечательнкая картинка"
+        lable.font = UIFont.systemFont(ofSize: 22)
+
+        return lable
     }()
 
     required init?(coder: NSCoder) {
@@ -29,12 +38,22 @@ class ImateTableViewCell: UITableViewCell {
     private func setupUI() {
         contentView.addSubview(contentImageView)
         contentImageView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.top.left.right.equalToSuperview()
+            make.height.equalTo(contentImageView.snp.width)
+        }
+
+        contentView.addSubview(imageNameLabel)
+        imageNameLabel.snp.makeConstraints { make in
+            make.top.equalTo(contentImageView.snp.bottom)
+            make.bottom.equalToSuperview()
+            make.centerX.equalToSuperview()
         }
     }
+
+    public func setImage() {}
 }
 
-class ImageInTableViewVC: UITableViewController {
+class MoreElementsInCellVC: UITableViewController {
     lazy var contentImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "dummy100")!)
         imageView.contentMode = .scaleAspectFit
@@ -43,22 +62,7 @@ class ImageInTableViewVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(ImateTableViewCell.self, forCellReuseIdentifier: ImateTableViewCell.reuseId)
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        contentImageView.removeFromSuperview()
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        UIApplication.shared.keyWindow?.addSubview(contentImageView)
-
-        view.addSubview(contentImageView)
-        contentImageView.snp.makeConstraints { make in
-            make.right.bottom.equalToSuperview().inset(50)
-        }
+        tableView.register(MoreElementsCell.self, forCellReuseIdentifier: ImateTableViewCell.reuseId)
     }
 
     // MARK: - Table view data source

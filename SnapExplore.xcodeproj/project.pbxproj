@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08CB00002993CA7C00DB6DEB /* StackInTableCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CBFFFF2993CA7C00DB6DEB /* StackInTableCellVC.swift */; };
+		08CB00022993D0BD00DB6DEB /* StretchAllImagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB00012993D0BD00DB6DEB /* StretchAllImagesVC.swift */; };
+		08CB00042993D5B100DB6DEB /* ImageRationAwareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB00032993D5B100DB6DEB /* ImageRationAwareVC.swift */; };
 		08CBFFDD2992DE4900DB6DEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CBFFDC2992DE4900DB6DEB /* AppDelegate.swift */; };
 		08CBFFDF2992DE4900DB6DEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CBFFDE2992DE4900DB6DEB /* SceneDelegate.swift */; };
 		08CBFFE12992DE4900DB6DEB /* ChangeImageRatioByButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CBFFE02992DE4900DB6DEB /* ChangeImageRatioByButtonViewController.swift */; };
@@ -18,9 +21,12 @@
 		08CBFFF829938AAC00DB6DEB /* ChangeImageRatioByButtonStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CBFFF729938AAC00DB6DEB /* ChangeImageRatioByButtonStackViewController.swift */; };
 		08CBFFFA2993A31200DB6DEB /* ExploreImagViewIntrinsicSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CBFFF92993A31200DB6DEB /* ExploreImagViewIntrinsicSizeViewController.swift */; };
 		08CBFFFC2993BB7B00DB6DEB /* ImageInTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CBFFFB2993BB7B00DB6DEB /* ImageInTableViewVC.swift */; };
+		08CBFFFE2993C28E00DB6DEB /* MoreElementsInCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CBFFFD2993C28E00DB6DEB /* MoreElementsInCellVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08CB00012993D0BD00DB6DEB /* StretchAllImagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchAllImagesVC.swift; sourceTree = "<group>"; };
+		08CB00032993D5B100DB6DEB /* ImageRationAwareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRationAwareVC.swift; sourceTree = "<group>"; };
 		08CBFFD92992DE4900DB6DEB /* SnapExplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapExplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CBFFDC2992DE4900DB6DEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08CBFFDE2992DE4900DB6DEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +39,8 @@
 		08CBFFF729938AAC00DB6DEB /* ChangeImageRatioByButtonStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeImageRatioByButtonStackViewController.swift; sourceTree = "<group>"; };
 		08CBFFF92993A31200DB6DEB /* ExploreImagViewIntrinsicSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreImagViewIntrinsicSizeViewController.swift; sourceTree = "<group>"; };
 		08CBFFFB2993BB7B00DB6DEB /* ImageInTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInTableViewVC.swift; sourceTree = "<group>"; };
+		08CBFFFD2993C28E00DB6DEB /* MoreElementsInCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreElementsInCellVC.swift; sourceTree = "<group>"; };
+		08CBFFFF2993CA7C00DB6DEB /* StackInTableCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackInTableCellVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,9 @@
 				08CBFFF52993819300DB6DEB /* MenuTableViewController.swift */,
 				08CBFFDC2992DE4900DB6DEB /* AppDelegate.swift */,
 				08CBFFDE2992DE4900DB6DEB /* SceneDelegate.swift */,
+				08CB00012993D0BD00DB6DEB /* StretchAllImagesVC.swift */,
+				08CBFFFF2993CA7C00DB6DEB /* StackInTableCellVC.swift */,
+				08CBFFFD2993C28E00DB6DEB /* MoreElementsInCellVC.swift */,
 				08CBFFFB2993BB7B00DB6DEB /* ImageInTableViewVC.swift */,
 				08CBFFF92993A31200DB6DEB /* ExploreImagViewIntrinsicSizeViewController.swift */,
 				08CBFFF729938AAC00DB6DEB /* ChangeImageRatioByButtonStackViewController.swift */,
@@ -77,6 +88,7 @@
 				08CBFFE72992DE4C00DB6DEB /* LaunchScreen.storyboard */,
 				08CBFFEA2992DE4C00DB6DEB /* Info.plist */,
 				08CBFFF32992DF5200DB6DEB /* Extension+UIColor.swift */,
+				08CB00032993D5B100DB6DEB /* ImageRationAwareVC.swift */,
 			);
 			path = SnapExplore;
 			sourceTree = "<group>";
@@ -158,10 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				08CBFFF829938AAC00DB6DEB /* ChangeImageRatioByButtonStackViewController.swift in Sources */,
+				08CB00022993D0BD00DB6DEB /* StretchAllImagesVC.swift in Sources */,
+				08CB00002993CA7C00DB6DEB /* StackInTableCellVC.swift in Sources */,
 				08CBFFFC2993BB7B00DB6DEB /* ImageInTableViewVC.swift in Sources */,
 				08CBFFE12992DE4900DB6DEB /* ChangeImageRatioByButtonViewController.swift in Sources */,
 				08CBFFFA2993A31200DB6DEB /* ExploreImagViewIntrinsicSizeViewController.swift in Sources */,
 				08CBFFDD2992DE4900DB6DEB /* AppDelegate.swift in Sources */,
+				08CBFFFE2993C28E00DB6DEB /* MoreElementsInCellVC.swift in Sources */,
+				08CB00042993D5B100DB6DEB /* ImageRationAwareVC.swift in Sources */,
 				08CBFFF62993819300DB6DEB /* MenuTableViewController.swift in Sources */,
 				08CBFFDF2992DE4900DB6DEB /* SceneDelegate.swift in Sources */,
 				08CBFFF42992DF5200DB6DEB /* Extension+UIColor.swift in Sources */,

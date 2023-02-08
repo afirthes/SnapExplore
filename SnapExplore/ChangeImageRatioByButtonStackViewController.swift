@@ -65,6 +65,7 @@ class ChangeImageRatioByButtonStackViewController: UIViewController {
         }
 
         // Без этого будет кнопка растягиваться на оставшееся место экрана.
+        // Либо у stackView нужно убрать ограничение на buttom
         // vStack.addArrangedSubview(UIView())
     }
 

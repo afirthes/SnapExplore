@@ -14,6 +14,14 @@ struct MenuItem {
 
 class MenuTableViewController: UITableViewController {
     let controllers = [
+        MenuItem(description: "Растягиваем картинки c учётом пропроций",
+                 controller: StretchAllImagesVC()),
+        MenuItem(description: "Растягиваем картинки в таблице до ее ширины с сохранением пропорций",
+                 controller: StretchAllImagesVC()),
+        MenuItem(description: "Реализуем Cell через стек.",
+                 controller: StackInTableCellVC()),
+        MenuItem(description: "Накидываем еще элементов в ячейку таблицы.",
+                 controller: MoreElementsInCellVC()),
         MenuItem(description: "Смотрим что творится с картинкой в таблице.",
                  controller: ImageInTableViewVC()),
         MenuItem(description: "Убеждаемся что у UIImageView есть intrinsic size",
@@ -21,7 +29,7 @@ class MenuTableViewController: UITableViewController {
         MenuItem(description: "Смена картинки с разным ration по кнопке (хранится в стеке)",
                  controller: ChangeImageRatioByButtonStackViewController()),
         MenuItem(description: "Смена картинки с разным ration по кнопке",
-                 controller: ChangeImageRatioByButtonViewController())
+                 controller: ChangeImageRatioByButtonViewController()),
     ]
 
     override func viewDidLoad() {
