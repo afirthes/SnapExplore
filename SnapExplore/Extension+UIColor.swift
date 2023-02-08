@@ -7,8 +7,8 @@
 
 import UIKit
 
-extension UIColor {
-    public convenience init(hex: String) {
+public extension UIColor {
+    convenience init(hex: String) {
         var r: CGFloat = 0
         var g: CGFloat = 0
         var b: CGFloat = 0
@@ -21,16 +21,15 @@ extension UIColor {
 
         if scanner.scanHexInt64(&hexNumber) {
             if hexColor.count == 8 {
-                r = CGFloat((hexNumber & 0xff000000) >> 24) / 255
-                g = CGFloat((hexNumber & 0x00ff0000) >> 16) / 255
-                b = CGFloat((hexNumber & 0x0000ff00) >> 8) / 255
-                a = CGFloat(hexNumber & 0x000000ff) / 255
+                r = CGFloat((hexNumber & 0xFF00_0000) >> 24) / 255
+                g = CGFloat((hexNumber & 0x00FF_0000) >> 16) / 255
+                b = CGFloat((hexNumber & 0x0000_FF00) >> 8) / 255
+                a = CGFloat(hexNumber & 0x0000_00FF) / 255
                 valid = true
-            }
-            else if hexColor.count == 6 {
-                r = CGFloat((hexNumber & 0xff0000) >> 16) / 255
-                g = CGFloat((hexNumber & 0x00ff00) >> 8) / 255
-                b = CGFloat(hexNumber & 0x0000ff) / 255
+            } else if hexColor.count == 6 {
+                r = CGFloat((hexNumber & 0xFF0000) >> 16) / 255
+                g = CGFloat((hexNumber & 0x00FF00) >> 8) / 255
+                b = CGFloat(hexNumber & 0x0000FF) / 255
                 valid = true
             }
         }
@@ -45,6 +44,6 @@ extension UIColor {
 
 extension UIImage {
     func getCropRation() -> CGFloat {
-        return self.size.width / self.size.height
+        size.width / size.height
     }
 }
