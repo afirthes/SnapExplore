@@ -10,6 +10,8 @@
 		08CB00002993CA7C00DB6DEB /* StackInTableCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CBFFFF2993CA7C00DB6DEB /* StackInTableCellVC.swift */; };
 		08CB00022993D0BD00DB6DEB /* StretchAllImagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB00012993D0BD00DB6DEB /* StretchAllImagesVC.swift */; };
 		08CB00042993D5B100DB6DEB /* ImageRationAwareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB00032993D5B100DB6DEB /* ImageRationAwareVC.swift */; };
+		08CB00062993F15900DB6DEB /* ComplexLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB00052993F15900DB6DEB /* ComplexLayoutVC.swift */; };
+		08CB00702995489400DB6DEB /* HorizontalStackExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB006F2995489400DB6DEB /* HorizontalStackExperiment.swift */; };
 		08CBFFDD2992DE4900DB6DEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CBFFDC2992DE4900DB6DEB /* AppDelegate.swift */; };
 		08CBFFDF2992DE4900DB6DEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CBFFDE2992DE4900DB6DEB /* SceneDelegate.swift */; };
 		08CBFFE12992DE4900DB6DEB /* ChangeImageRatioByButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CBFFE02992DE4900DB6DEB /* ChangeImageRatioByButtonViewController.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		08CB00012993D0BD00DB6DEB /* StretchAllImagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchAllImagesVC.swift; sourceTree = "<group>"; };
 		08CB00032993D5B100DB6DEB /* ImageRationAwareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRationAwareVC.swift; sourceTree = "<group>"; };
+		08CB00052993F15900DB6DEB /* ComplexLayoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexLayoutVC.swift; sourceTree = "<group>"; };
+		08CB006F2995489400DB6DEB /* HorizontalStackExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalStackExperiment.swift; sourceTree = "<group>"; };
 		08CBFFD92992DE4900DB6DEB /* SnapExplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapExplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CBFFDC2992DE4900DB6DEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08CBFFDE2992DE4900DB6DEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 				08CBFFF52993819300DB6DEB /* MenuTableViewController.swift */,
 				08CBFFDC2992DE4900DB6DEB /* AppDelegate.swift */,
 				08CBFFDE2992DE4900DB6DEB /* SceneDelegate.swift */,
+				08CB006F2995489400DB6DEB /* HorizontalStackExperiment.swift */,
+				08CB00052993F15900DB6DEB /* ComplexLayoutVC.swift */,
 				08CB00012993D0BD00DB6DEB /* StretchAllImagesVC.swift */,
 				08CBFFFF2993CA7C00DB6DEB /* StackInTableCellVC.swift */,
 				08CBFFFD2993C28E00DB6DEB /* MoreElementsInCellVC.swift */,
@@ -176,7 +182,9 @@
 				08CBFFE12992DE4900DB6DEB /* ChangeImageRatioByButtonViewController.swift in Sources */,
 				08CBFFFA2993A31200DB6DEB /* ExploreImagViewIntrinsicSizeViewController.swift in Sources */,
 				08CBFFDD2992DE4900DB6DEB /* AppDelegate.swift in Sources */,
+				08CB00062993F15900DB6DEB /* ComplexLayoutVC.swift in Sources */,
 				08CBFFFE2993C28E00DB6DEB /* MoreElementsInCellVC.swift in Sources */,
+				08CB00702995489400DB6DEB /* HorizontalStackExperiment.swift in Sources */,
 				08CB00042993D5B100DB6DEB /* ImageRationAwareVC.swift in Sources */,
 				08CBFFF62993819300DB6DEB /* MenuTableViewController.swift in Sources */,
 				08CBFFDF2992DE4900DB6DEB /* SceneDelegate.swift in Sources */,

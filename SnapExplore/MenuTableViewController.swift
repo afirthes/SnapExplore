@@ -14,6 +14,10 @@ struct MenuItem {
 
 class MenuTableViewController: UITableViewController {
     let controllers = [
+        MenuItem(description: "Смотрим как стек растягивает элементы.",
+                 controller: HorizontalStackExperiment()),
+        MenuItem(description: "Сложный экранчик на стеке",
+                 controller: ComplexLayoutVC()),
         MenuItem(description: "Растягиваем картинки c учётом пропроций",
                  controller: StretchAllImagesVC()),
         MenuItem(description: "Растягиваем картинки в таблице до ее ширины с сохранением пропорций",

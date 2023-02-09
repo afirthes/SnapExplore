@@ -95,7 +95,7 @@ class StretchAllImagesVC: UITableViewController {
     }
 
     override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
-        3
+        5
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -108,9 +108,15 @@ class StretchAllImagesVC: UITableViewController {
             cell.setupImage(UIImage(named: "dummy100x200"))
         case 2:
             cell.setupImage(UIImage(named: "dummy150x200"))
+        case 3:
+            cell.setupImage(UIImage(named: "pic1"))
+        case 4:
+            cell.setupImage(UIImage(named: "pic2"))
         default:
             break
         }
+        
+        cell.selectionStyle = .none
 
         return cell
     }

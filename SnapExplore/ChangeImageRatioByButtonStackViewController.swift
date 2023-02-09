@@ -50,13 +50,13 @@ class ChangeImageRatioByButtonStackViewController: UIViewController {
 
         view.addSubview(vStack)
         vStack.snp.updateConstraints { make in
-            make.left.top.right.equalToSuperview()
+            make.left.top.right.equalTo(view.safeAreaLayoutGuide )
         }
 
         vStack.addArrangedSubview(topImageView)
-        topImageView.snp.makeConstraints { maker in
-            maker.top.left.right.equalToSuperview()
-        }
+//        topImageView.snp.makeConstraints { maker in
+//            maker.top.left.right.equalTo(view.layoutMargins)
+//        }
 
         vStack.addArrangedSubview(button)
         button.snp.makeConstraints { make in
